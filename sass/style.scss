@@ -1,0 +1,436 @@
+/* Variables */
+$color-one: #fed136;
+$color-two: #ffffff;
+$color-three: #f7f7f7;
+$color-four: #000000;
+$font-one: 'Montserrat', sans-serif;
+$font-two: 'Noto Serif', serif;
+$font-three: 'Roboto Slab', serif;
+$font-four: 'wisdom_scriptregular';
+
+body {
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'wisdom_scriptregular';
+    src: url('/vendor/webfontkit-20200205-065138/wisdom-webfont.woff2') format('woff2'),
+         url('/vendor/webfontkit-20200205-065138/wisdom-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.golden {
+    font-family: $font-four;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+}
+
+.navigation {
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    background: rgba(100, 100, 100, 0);
+    color: $color-one;
+
+    .container {
+        display: block;
+    }
+
+    div {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 0;
+        list-style-type: none;
+        align-items: center;
+        text-transform: uppercase;
+
+        li {
+            font-family: $font-one;
+            padding: 0 auto;
+            margin: auto;
+          
+            a {
+              text-decoration: none;
+              color: $color-two;
+              font-size: 12px;
+            }
+        }
+    }
+}
+
+.wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.page-title {
+    margin: 10px auto;
+    height: auto;
+    text-align: center;
+    font-family: $font-one;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.page-subtitle {
+    margin: 0;
+    text-align: center;
+    font-family: $font-two;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    padding-bottom: 60px;
+}
+
+.home {
+/*     position:relative; */
+
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    background-image: url(https://i.postimg.cc/QxrVqVSN/Background-Image.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+/*     &::before {
+        content:'';
+        background:rgba(0,0,0,0.5);
+        width:100%;
+        height:100%;
+        position:absolute;
+    } */
+
+    .wrapper {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        color: $color-two;
+
+        .page-title {
+            margin: 1em auto;
+            height: auto;
+            letter-spacing: -1.88px;
+        }
+
+        .page-subtitle {
+            margin: 1em auto;
+            height: auto;
+            letter-spacing: -1px;
+            padding-bottom: 0;
+        }
+
+        .btn {
+            width: 200px;
+            height: 3em;
+            background-color: $color-one;
+            display: inline-block;
+            padding: 1em;
+            border-radius: 3px;
+            font-family: $font-one;
+            color: $color-two;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+.container {
+    border: 1px solid red;
+    padding: 0;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+    padding: 10px 20px;
+
+    a {
+        margin: 10px;
+        font-size: 0;
+    }
+
+    p {
+        margin: 0;
+        font-family: $font-three;
+        font-size: 12px;
+        letter-spacing: -0.35px;
+    }
+
+    i {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 54px;
+        border-radius: 50%;
+        color: $color-one;
+        border: 3px solid $color-one;
+    }
+}
+
+strong {
+    height: 18px;
+    font-family: $font-one;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    margin: 15px;
+}
+
+.portfolio {
+    background: $color-three;
+}
+
+.row {
+    justify-content: space-between;
+
+    & > div {
+        width: 100%;
+        height: 393px;
+        background: $color-two;
+        margin-top: 30px;
+    }
+    
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .page-title {
+        height: 18px;
+        font-size: 17px;
+        letter-spacing: -0.45px;
+        margin: 25px 0 0;
+    }
+
+    .page-subtitle {
+        height: 15px;
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+}
+
+.page-footer {
+    padding: 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        padding: 0;
+
+        div {
+            font-family: $font-one;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            vertical-align: middle;
+
+            strong {
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+                line-height: 22px;
+                letter-spacing: -0.35px;
+                margin: 0.3em;
+            }
+        }
+    }
+
+    .buttons {
+        justify-content: center;
+
+        ul {
+            margin: 0.3em;
+            padding: 0;
+            list-style-type: none;
+
+            li {
+                font-size: 0;
+                width: 40px;
+                margin: auto 5px;
+                display: inline-block;
+
+                i {
+                    color: $color-two;
+                    background-color: $color-four;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        } 
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        div {
+            margin: 0;
+            padding: 0;
+        }
+    
+        ul {
+            list-style-type: none;
+            align-items: center;
+            text-transform: uppercase;
+    
+            li {
+                font-family: $font-one;
+                display: inline-block;
+                padding: 0 10px;
+              
+                a {
+                  text-decoration: none;
+                  color: $color-two;
+                  font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .golden {
+        margin: 20px;
+    }
+
+    .page-title {
+        font-size: 40px;
+    }
+    
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .home {
+        .wrapper {
+            .page-title {
+                margin: 0.3em auto;
+                font-size: 60px;
+            }
+    
+            .page-subtitle {
+                margin: 0.3em auto;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .service {
+        flex: 0 0 50%;
+
+        p {
+            margin: 10px 0 0;
+        }
+    }
+
+    .row {    
+        & > div {
+            width: 48%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navigation {
+        ul {
+            li {
+                font-family: $font-one;
+                display: inline-block;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .home {
+        .wrapper {
+            .page-title {
+                font-size: 75px;
+            }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    .service {
+        flex: 0 0 33.333%;
+
+        p {
+            margin: 10px 0 0;
+        }
+    }
+
+    .row {    
+        & > div {
+            width: 32%;
+        }
+    }
+
+    .page-footer {
+        .container {
+            display: flex;
+            padding: 0;
+            flex-direction: row;
+
+            & > div {
+                strong {
+                    text-align: left;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*  Uwagi
+
+
+jak zrobic ciemniejsze tlo na glownej? ::before?
+
+*/
